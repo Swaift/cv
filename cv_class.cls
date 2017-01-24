@@ -40,3 +40,7 @@
     \item #3
     \end{itemize}
 }
+
+\newcommand{\basic}{
+    {\it} (basic)
+}

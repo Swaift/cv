@@ -1,10 +1,33 @@
 \documentclass{cv_class}
 
+\usepackage{multicol}
+
+\setlength{\columnseprule}{1pt}
+
 \begin{document}
 
+\begin{multicols}{2}
+[
 \name{Tawsif Azad}
-
 \contact{23111 San Salvador Pl.}{Katy, TX}{77494}{tawsifazad@gmail.com}{832-840-2884}
+]
+
+\raggedleft
+
+\section{Skills}
+    \subsection{Languages}
+    C           \\
+    C++         \\
+    Java        \\
+    Javascript  \\
+    SQL \basic  \\
+    PHP \basic  \\
+    \subsection{Frameworks}
+    AngularJS   \\
+    \subsection{Tools}
+
+\columnbreak
+\raggedright
 
 \section{Education}
 \datedsubsection{University of Texas at Austin}{2015--Present}
@@ -18,4 +41,5 @@ Focus in Software Engineering and Signal Processing \\
 {C++}
 {Java}
 
+\end{multicols}
 \end{document}
