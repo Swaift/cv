@@ -1,39 +1,48 @@
 \documentclass{cv_class}
 
-\usepackage{multicol}
-
-\setlength{\columnseprule}{1pt}
+\usepackage[letterpaper, margin=3cm]{geometry}
+\usepackage[super]{nth}
 
 \begin{document}
 
-\begin{multicols}{2}
-[
+\pagenumbering{gobble}
+
 \name{Tawsif Azad}
-\contact{23111 San Salvador Pl.}{Katy, TX}{77494}{tawsifazad@gmail.com}{832-840-2884}
-]
+\contact
+    {tawsifazad@gmail.com}
+    {832-840-2884}
+\address
+    {Local}
+    {201 East \nth{21} Street \#M0217}
+    {Austin, TX, USA}
+    {78705}
+\address
+    {Permanent}
+    {23111 San Salvador Place}
+    {Katy, TX, USA}
+    {77494}
 
-\raggedleft
-
+\begin{column}{left}
 \section{Skills}
     \subsection{Languages}
-    C           \\
+    \expert{C}  \\
     C++         \\
     Java        \\
     Javascript  \\
-    SQL \basic  \\
-    PHP \basic  \\
+    SQL         \\
+    PHP         \\
     \subsection{Frameworks}
     AngularJS   \\
     \subsection{Tools}
-
-\columnbreak
-\raggedright
-
+\end{column}
+%\colsep
+\begin{column}{right}
 \section{Education}
 \datedsubsection{University of Texas at Austin}{2015--Present}
 Sophomore (May 2019 Expected Graduation) \\
 Bachelor of Science, Electrical and Computer Engineering \\
 Focus in Software Engineering and Signal Processing \\
+GPA: 4.0
 
 \section{Coursework}
 \bullets
@@ -41,5 +50,6 @@ Focus in Software Engineering and Signal Processing \\
 {C++}
 {Java}
 
-\end{multicols}
+\end{column}
+
 \end{document}

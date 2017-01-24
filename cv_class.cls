@@ -3,15 +3,16 @@
 
 \LoadClass{article}
 \RequirePackage{titlesec}
+\RequirePackage{ifthen}
 
 \titleformat{\section}
-    {\Large\scshape\raggedright}
+    {\Large\scshape}
     {}{0em}
     {}
     [\titlerule]
 
 \titleformat{\subsection}
-    {\large\scshape\raggedright}
+    {\large\scshape}
     {}{0em}
     {}
 
@@ -27,10 +28,20 @@
     \centerline{\Huge{#1}}
 }
 
-\newcommand{\contact}[5]{
+\newcommand{\contact}[2]{
+    \begin{center}
     #1 {\large\textperiodcentered}
+    #2
+    \end{center}
+}
+
+\newcommand{\address}[4]{
+    \begin{center}
+    \emph{#1:}
     #2 {\large\textperiodcentered}
-    #3 {\Large} #4 \ {\Large} #5
+    #3 {\large\textperiodcentered}
+    #4
+    \end{center}
 }
 
 \newcommand{\bullets}[3]{
@@ -41,6 +52,28 @@
     \end{itemize}
 }
 
-\newcommand{\basic}{
-    {\it} (basic)
+\newcommand{\expert}[1]{
+    \textbf{\large#1}
+}
+
+\newenvironment{column}[1]
+{
+    \ifthenelse{ \equal{#1}{left} }
+    {
+        \begin{minipage}[t]{0.3\textwidth}
+        \raggedleft
+    }
+    {
+        \begin{minipage}[t]{0.7\textwidth}
+        \raggedright
+    }
+}
+{
+    \end{minipage}%
+}
+
+\newcommand{\colsep}{
+    \hspace{3mm}%
+    \vrule{}%
+    \hspace{3mm}%
 }
