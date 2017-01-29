@@ -1,16 +1,23 @@
 \documentclass{cv_class}
-\usepackage[letterpaper, margin=2cm]{geometry}
+\usepackage[letterpaper, margin=5pc]{geometry}
 \usepackage[super]{nth}
+\usepackage[urw-garamond]{mathdesign}
+\usepackage[T1]{fontenc}
+\usepackage{garamondx}
+\setlength\parindent{0pt}
 \begin{document}
+\leftskip 8pc
 \pagenumbering{gobble}%
-\name{Tawsif Azad}%
-\begin{center}%
+\begin{flushright}%
+\name{Tawsif Azad} 
+
+\vspace{6pt}
 \contact
     {tawsifazad@gmail.com}%
     {832-840-2884}%
 
 \address
-    {Local}%
+    {Present}%
     {201 East \nth{21} Street \#M0217}%
     {Austin, TX, USA}%
     {78705}%
@@ -20,12 +27,27 @@
     {23111 San Salvador Place}%
     {Katy, TX, USA}%
     {77494}%
-\end{center}%
-\begin{twocols}%
-\section{Skills}%
-\subsection{Languages}%
+\end{flushright}%
+
+\section{education}%
+\sub{University of Texas at Austin \hfill \normalfont\itshape{2015--Present}}
+Sophomore (May 2019 Expected Graduation) \\
+Bachelor of Science, Electrical and Computer Engineering \\
+Focus in Software Engineering and Signal Processing \\
+GPA: 4.0 \\
+\section{projects}%
+\sub{Handheld Microcontroller Platformer Game}
+- Written in C for ARM microcontroller \\
+- Audio output through headphones \\
+- Wrote driver for color LCD display \\
+- Slide potentiometer for player controls \\
+- Programmed gravity and collision detection \\
+- Wrote level designer in Excel VBA \\
+\section{skills}%
+\sub{Languages}%
 C\\
 C++\\
+\vspace{1em}
 Java\\
 %MATLAB\\
 %Thumb(ARM) Assembly\\
@@ -33,14 +55,13 @@ Java\\
 %Javascript\\
 %SQL\\
 %PHP\\
-%\subsection{Frameworks}%
+%\sub{Frameworks}%
 %NodeJS\\
 %AngularJS\\
 %ExpressJS\\
 %Bootstrap\\
 %jQuery\\
-\hfill
-\subsection{Tools}%
+\sub{Tools}%
 Linux/Unix\\
 Vim\\
 Git\\
@@ -48,7 +69,7 @@ GDB\\
 \LaTeX\\
 %MongoDB\\
 \hfill
-\section{Coursework}%
+\section{courses}%
 %Intro to Electrial Engineering\\
 Intro to Computing\\
 %Circuit Theory\\
@@ -59,26 +80,8 @@ Discrete Math\\
 %Software Design I\\
 Linear Systems \& Signals\\
 %Vector Calculus\\
-Computer Architecture (current)\\
+Computer Architecture \itshape{(current)}\\
 %Intro to Automatic Control (current)\\
-Algorithms (current)\\
+Algorithms \itshape{(current)}\\
 %Software Design II (current)\\
-\colsep
-\section{Education}%
-\datedsubsection{University of Texas at Austin}{2015--Present}%
-Sophomore (May 2019 Expected Graduation) \\
-Bachelor of Science, Electrical and Computer Engineering \\
-Focus in Software Engineering and Signal Processing \\
-GPA: 4.0
-\section{Projects}%
-\subsection{Handheld Microcontroller Platformer Game}
-\begin{itemize}%
-\item Written in C for ARM microcontroller
-\item Audio output through headphones
-\item Wrote driver for color LCD display
-\item Slide potentiometer for player controls
-\item Programmed gravity and collision detection
-\item Wrote level designer in Excel VBA
-\end{itemize}%
-\end{twocols}
 \end{document}

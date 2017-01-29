@@ -3,26 +3,21 @@
 
 \LoadClass{article}
 \RequirePackage{titlesec}
-\RequirePackage{ifthen}
-\RequirePackage{calc}
 
 \titleformat{\section}
-    {\Large\scshape\raggedleft}
-    {}{0em}
-    {}
-    [\titlerule]
+    [leftmargin]
+    {\large\raggedleft\bfseries}
+    {}{0em}{}
 
-\titleformat{\subsection}
-    {\large\scshape\raggedleft}
-    {}{0em}
-    {}
+\titlespacing{\section}
+    {5pc}{0pc}{1.5pc}
 
-\newcommand*{\datedsubsection}[2]{%
-    \subsection[#1]{#1 \hfill #2}%
+\newcommand*{\sub}[1]{%
+    {\large\scshape\bfseries\raggedright{#1}} \\
 }
 
 \newcommand*{\name}[1]{%
-    \centerline{\Huge{#1}}%
+    {\huge\bfseries{#1}}
 }
 
 \newcommand*{\contact}[2]{%
@@ -36,34 +31,3 @@
     #3 {\large\textperiodcentered}
     #4%
 }
-
-\newcommand*{\bullets}[3]{
-    \begin{itemize}
-    \item #1
-    \item #2
-    \item #3
-    \end{itemize}
-}
-
-\newcommand*{\expert}[1]{
-    \textbf{\large#1}
-}
-
-\newenvironment*{twocols}
-{
-    \newcommand*{\colspace}{3mm}
-    \newcommand*{\colsep}{
-        \end{minipage}%
-        \hspace{\colspace}%
-        \vrule{}%
-        \hspace{\colspace}%
-        \begin{minipage}[t]{0.75\textwidth-\colspace}
-        \raggedright
-    }
-    \begin{minipage}[t]{0.25\textwidth-\colspace}
-    \raggedleft
-}
-{
-    \end{minipage}%
-}
-
