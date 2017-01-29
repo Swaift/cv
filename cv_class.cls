@@ -10,7 +10,7 @@
     {}{0em}{}
 
 \titlespacing{\section}
-    {5pc}{0pc}{1.5pc}
+    {6pc}{0pc}{1.5pc}
 
 \newcommand*{\sub}[1]{%
     {\large\scshape\bfseries\raggedright{#1}} \\
