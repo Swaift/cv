@@ -7,41 +7,37 @@
 \RequirePackage{calc}
 
 \titleformat{\section}
-    {\Large\scshape}
+    {\Large\scshape\raggedleft}
     {}{0em}
     {}
     [\titlerule]
 
 \titleformat{\subsection}
-    {\large\scshape}
+    {\large\scshape\raggedleft}
     {}{0em}
     {}
 
-\newcommand{\datedsubsection}[2]{%
+\newcommand*{\datedsubsection}[2]{%
     \subsection[#1]{#1 \hfill #2}%
 }
 
-\newcommand{\name}[1]{%
+\newcommand*{\name}[1]{%
     \centerline{\Huge{#1}}%
 }
 
-\newcommand{\contact}[2]{%
-    \begin{center}%
+\newcommand*{\contact}[2]{%
     #1 {\large\textperiodcentered}
     #2%
-    \end{center}%
 }
 
-\newcommand{\address}[4]{%
-    \begin{center}%
+\newcommand*{\address}[4]{%
     \emph{#1:}
     #2 {\large\textperiodcentered}
     #3 {\large\textperiodcentered}
     #4%
-    \end{center}%
 }
 
-\newcommand{\bullets}[3]{
+\newcommand*{\bullets}[3]{
     \begin{itemize}
     \item #1
     \item #2
@@ -49,22 +45,22 @@
     \end{itemize}
 }
 
-\newcommand{\expert}[1]{
+\newcommand*{\expert}[1]{
     \textbf{\large#1}
 }
 
-\newenvironment{twocols}
+\newenvironment*{twocols}
 {
-    \newcommand{\colspace}{3mm}
-    \newcommand{\colsep}{
+    \newcommand*{\colspace}{3mm}
+    \newcommand*{\colsep}{
         \end{minipage}%
         \hspace{\colspace}%
         \vrule{}%
         \hspace{\colspace}%
-        \begin{minipage}[t]{0.8\textwidth-\colspace}
+        \begin{minipage}[t]{0.75\textwidth-\colspace}
         \raggedright
     }
-    \begin{minipage}[t]{0.2\textwidth-\colspace}
+    \begin{minipage}[t]{0.25\textwidth-\colspace}
     \raggedleft
 }
 {

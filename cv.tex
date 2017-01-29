@@ -1,48 +1,84 @@
 \documentclass{cv_class}
-
-\usepackage[letterpaper, margin=3cm]{geometry}
+\usepackage[letterpaper, margin=2cm]{geometry}
 \usepackage[super]{nth}
-
 \begin{document}
-\pagenumbering{gobble}
-\name{Tawsif Azad}
+\pagenumbering{gobble}%
+\name{Tawsif Azad}%
+\begin{center}%
 \contact
-    {tawsifazad@gmail.com}
-    {832-840-2884}
+    {tawsifazad@gmail.com}%
+    {832-840-2884}%
+
 \address
-    {Local}
-    {201 East \nth{21} Street \#M0217}
-    {Austin, TX, USA}
-    {78705}
+    {Local}%
+    {201 East \nth{21} Street \#M0217}%
+    {Austin, TX, USA}%
+    {78705}%
+
 \address
-    {Permanent}
-    {23111 San Salvador Place}
-    {Katy, TX, USA}
-    {77494}
-\begin{twocols}
-\section{Skills}
-    \subsection{Languages}
-    C\\
-    C++\\
-    Java\\
-    %Javascript\\
-    %SQL\\
-    %PHP\\
-    \subsection{Frameworks}
-    %AngularJS\\
-    \subsection{Tools}
-    %MongoDB
+    {Permanent}%
+    {23111 San Salvador Place}%
+    {Katy, TX, USA}%
+    {77494}%
+\end{center}%
+\begin{twocols}%
+\section{Skills}%
+\subsection{Languages}%
+C\\
+C++\\
+Java\\
+%MATLAB\\
+%Thumb(ARM) Assembly\\
+%VHDL\\
+%Javascript\\
+%SQL\\
+%PHP\\
+%\subsection{Frameworks}%
+%NodeJS\\
+%AngularJS\\
+%ExpressJS\\
+%Bootstrap\\
+%jQuery\\
+\hfill
+\subsection{Tools}%
+Linux/Unix\\
+Vim\\
+Git\\
+GDB\\
+\LaTeX\\
+%MongoDB\\
+\hfill
+\section{Coursework}%
+%Intro to Electrial Engineering\\
+Intro to Computing\\
+%Circuit Theory\\
+%Differential Equations\\
+%Matrices\\
+Discrete Math\\
+%Digital Logic Design\\
+%Software Design I\\
+Linear Systems \& Signals\\
+%Vector Calculus\\
+Computer Architecture (current)\\
+%Intro to Automatic Control (current)\\
+Algorithms (current)\\
+%Software Design II (current)\\
 \colsep
-\section{Education}
-\datedsubsection{University of Texas at Austin}{2015--Present}
+\section{Education}%
+\datedsubsection{University of Texas at Austin}{2015--Present}%
 Sophomore (May 2019 Expected Graduation) \\
 Bachelor of Science, Electrical and Computer Engineering \\
 Focus in Software Engineering and Signal Processing \\
 GPA: 4.0
-\section{Coursework}
-\bullets
-{C}
-{C++}
-{Java}
+\section{Projects}%
+\subsection{Handheld Microcontroller Platformer Game}
+\begin{itemize}%
+\item Written in C for ARM microcontroller
+\item Audio output through headphones
+\item Wrote driver for color LCD display
+\item Slide potentiometer for player controls
+\item Programmed gravity and collision detection
+\item Wrote level designer in Excel VBA
+\end{itemize}%
 \end{twocols}
 \end{document}
