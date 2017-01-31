@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{cv_class}[2017/01/23 Custom CV class]
+\ProvidesClass{cv}[2017/01/23 Custom CV class]
 
 \LoadClass{article}
 \RequirePackage{titlesec}
